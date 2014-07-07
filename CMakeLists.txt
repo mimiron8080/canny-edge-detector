@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(CannyEdgeDetector)
+find_package(OpenCV REQUIRED)
+add_executable(CannyEdgeDetector CannyEdgeDetector)
+target_link_libraries(CannyEdgeDetector ${OpenCV_LIBS})
